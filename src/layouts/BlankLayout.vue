@@ -1,9 +1,10 @@
 <template>
-    <h1>This is an home page</h1>
+  <router-view />
+  <footer> Footer </footer>
 </template>
 
 <script lang="ts" setup>
 </script>
 
-<style>
+<style scoped>
 </style>

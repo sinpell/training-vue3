@@ -5,6 +5,11 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
+      path: '/pinia',
+      name: 'PiniaPage',
+      component: () => import('../views/BasicPinia.vue'),
+    },
+    {
       path: '/login',
       name: 'LoginPage',
       component: () => import('../views/LoginView.vue'),
@@ -74,7 +79,7 @@ const router = createRouter({
 
 
 // ยิง api เช็คว่า login หรือไม่
-const isLogin = false
+const isLogin = true
 
 router.beforeEach((to, form, next) => {
   if (
